@@ -162,3 +162,51 @@ body {
     background-color: var(--botao-azul-efeito);
     color: var(--cor-fundo);
 }
+
+@media only screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: 100%; /* Altera para uma coluna */
+    }
+
+    .container__imagem {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .container__caixa {
+        margin: 0; /* Remove a margem para melhor ajuste */
+    }
+
+    .secundaria {
+        margin: 0; /* Remove a margem para melhor ajuste */
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .descricao__titulo {
+        font-size: 36px; /* Reduz o tamanho do título */
+    }
+
+    .descricao__texto {
+        font-size: 14px; /* Reduz o tamanho do texto */
+    }
+
+    .container__botao,
+    .secundario__botao {
+        width: 80%; /* Define a largura dos botões */
+        margin: 0 auto; /* Centraliza os botões */
+    }
+
+    .dispositivos__lista {
+        flex-direction: column; /* Altera a direção da lista para uma coluna */
+        margin: 2em auto; /* Centraliza a lista */
+    }
+
+    .lista__item {
+        font-size: 24px; /* Reduz o tamanho dos itens da lista */
+    }
+
+    .rodape {
+        margin: 2em 1em; /* Ajusta a margem do rodapé */
+    }
+}
